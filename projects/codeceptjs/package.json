@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "codeceptjs": "^3.6.5",
+    "playwright": "^1.46.1"
+  },
+"scripts": {
+    "testmoch": "codeceptjs run --reporter mochawesome",
+    "codeceptjs": "codeceptjs run --steps",
+    "duplicate": "npx codeceptjs run --grep '@duplicate'",
+    "create": "npx codeceptjs run --grep 'create'"
+},
+  "author": "Gisele Gonçalves",
+  "devDependencies": {
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3"
+  }
+}
